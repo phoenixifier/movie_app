@@ -1,20 +1,31 @@
-/*const url = "https://imdb236.p.rapidapi.com/imdb/lowest-rated-movies";
-const options = {
-	method: "GET",
+export const rapid_config = {
+	BASE_URL: "https://imdb236.p.rapidapi.com/imdb",
+	API_KEY: process.env.EXPO_PUBLIC_MOVIE_API_KEY,
 	headers: {
 		accept: "application/json",
-		"x-rapidapi-key": "7fd2c33783mshb9805a73b57b02ap17a484jsn9c4ef6372e81",
+		"x-rapidapi-key": process.env.EXPO_PUBLIC_MOVIE_API_KEY,
 		"x-rapidapi-host": "imdb236.p.rapidapi.com",
 	},
 };
 
-fetch(url, options).then((res) => {
-	res
-		.json()
-		.then((json) => {
-			console.log(json);
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-});*/
+export const getPopularMovies = async ({ query }: { query: string }) => {
+	const endpoint = query
+		? `${rapid_config.BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
+		: `${rapid_config.BASE_URL}/most_popular_movies}`;
+	const response = await fetch(endpoint, {
+		method: "GET",
+		// @ts-ignore
+		headers: rapid_config.headers,
+	});
+
+	if (!response.ok) {
+		throw new Error(
+			"Failed to fetch popular movies from API.",
+			// @ts-ignore
+			response.statusText,
+		);
+	}
+
+	const data = await response.json();
+	return data.results;
+};
