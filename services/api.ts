@@ -1,20 +1,24 @@
 export const rapid_config = {
 	BASE_URL: "https://imdb236.p.rapidapi.com/imdb",
-	API_KEY: process.env.EXPO_PUBLIC_MOVIE_API_KEY,
+	API_KEY: "7fd2c33783mshb9805a73b57b02ap17a484jsn9c4ef6372e81",
 	headers: {
-		accept: "application/json",
-		"x-rapidapi-key": process.env.EXPO_PUBLIC_MOVIE_API_KEY,
+		"x-rapidapi-key": "7fd2c33783mshb9805a73b57b02ap17a484jsn9c4ef6372e81",
 		"x-rapidapi-host": "imdb236.p.rapidapi.com",
 	},
 };
 
 export const getPopularMovies = async ({ query }: { query: string }) => {
+	if (!rapid_config.API_KEY) {
+		throw new Error(
+			"API key is missing. Check EXPO_PUBLIC_MOVIE_API_KEY environment variable.",
+		);
+	}
+
 	const endpoint = query
 		? `${rapid_config.BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
-		: `${rapid_config.BASE_URL}/most_popular_movies}`;
+		: `${rapid_config.BASE_URL}/most-popular-movies`;
 	const response = await fetch(endpoint, {
 		method: "GET",
-		// @ts-ignore
 		headers: rapid_config.headers,
 	});
 
@@ -26,6 +30,5 @@ export const getPopularMovies = async ({ query }: { query: string }) => {
 		);
 	}
 
-	const data = await response.json();
-	return data.results;
+	return await response.json();
 };

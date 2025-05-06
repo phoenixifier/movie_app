@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cb8ee2e-b3fc-4704-afe1-1b6770b62a71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/useFetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MovieCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,24 +32,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/imac/Developer/movie_app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/Users/imac/Library/Application Support/JetBrains/WebStorm2024.2/node/versions/23.11.0/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Settings.Biome",
-    "ts.external.directory.path": "/Users/imac/Developer/movie_app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/imac/Developer/movie_app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/imac/Library/Application Support/JetBrains/WebStorm2024.2/node/versions/23.11.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Biome&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/imac/Developer/movie_app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -71,7 +77,17 @@
       <workItem from="1744719907306" duration="2361000" />
       <workItem from="1744778416972" duration="2778000" />
       <workItem from="1744952986316" duration="4125000" />
-      <workItem from="1745211000283" duration="8545000" />
+      <workItem from="1745211000283" duration="11826000" />
+      <workItem from="1745297410597" duration="5560000" />
+      <workItem from="1745386496797" duration="611000" />
+      <workItem from="1745470230988" duration="421000" />
+      <workItem from="1745478240175" duration="617000" />
+      <workItem from="1745487298026" duration="1063000" />
+      <workItem from="1745556866441" duration="1470000" />
+      <workItem from="1745562453855" duration="100000" />
+      <workItem from="1745562555219" duration="6299000" />
+      <workItem from="1745989644764" duration="408000" />
+      <workItem from="1746439759367" duration="6545000" />
     </task>
     <servers />
   </component>

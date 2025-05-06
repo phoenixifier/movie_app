@@ -21,7 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder, onPress }) => {
 				placeholder={placeholder}
 				value=""
 				onChangeText={() => {}}
-				placeholderTextColor="a8b5db"
+				placeholderTextColor="white"
 				className="flex-1 ml-2 text-white"
 			/>
 		</View>
